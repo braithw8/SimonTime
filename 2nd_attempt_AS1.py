@@ -6,7 +6,8 @@
 # source file:
 #
 
-# Defined constants 
+# Defined constants
+# Nothing
 PRICE_SINGLE = 1.00
 PRICE_SMALL = 5.00
 PRICE_LARGE = 19.00
@@ -20,7 +21,7 @@ def display_welcome():
     #simple welcome greeting
     x = "Welcome to MinMax!"
     print(x)
-    
+
 def get_barcode():
     prompt = ''
     Q_SINGLES = 0
@@ -56,10 +57,10 @@ def get_barcode():
 
     return total_rounded
 
-    
 
-            
-    
+
+
+
 def calculate_subtotal(number_of_singles: int, number_of_smalls: int, number_of_larges:int ) -> float:
     """Return the subtotal amount of money the customer owes after inputting the number of singles, smalls and larges.
     >>> calculate_subtotal(2, 2, 1)
@@ -71,7 +72,7 @@ def calculate_subtotal(number_of_singles: int, number_of_smalls: int, number_of_
 
 def calculate_total_bill(subtotal_before_tax: float) -> float:
     """Take the subtotal_before_tax and return the total tax, total bill before rounding
-    and the total rounded bill. Print the running total. 
+    and the total rounded bill. Print the running total.
     >>> calculate_total_bill(31.0)
     Subtotal is: 31.00
     Tax is: 4.03
@@ -87,7 +88,7 @@ def calculate_total_bill(subtotal_before_tax: float) -> float:
     return total_tax, total_before_rounding, total_bill
 
 def display_total_bill(sub: float, tax: float, total: float, total_rounded: float) -> str:
-    
+
     print("Subtotal is:", format(sub, '.2f'))
     print("Tax is:", format(tax, '.2f'))
     print("Your total is:", format(total, '.2f'))
@@ -120,5 +121,3 @@ if __name__ == "__main__":
 
     if amount_tendered != 0.0:
         display_change(amount_tendered, total_bill)
-        
-    
