@@ -8,6 +8,7 @@
 
 # Defined constants
 # Nothing
+# nothing 2
 PRICE_SINGLE = 1.00
 PRICE_SMALL = 5.00
 PRICE_LARGE = 19.00
